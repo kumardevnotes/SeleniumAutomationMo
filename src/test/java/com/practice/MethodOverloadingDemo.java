@@ -4,7 +4,7 @@ public class MethodOverloadingDemo {
 
 	public static void main(String[] args) {
 		
-		//Method overloading
+		//Method overloading - Object oriented principals - Static polymorphism
 		//same method name with different signature
 		displayName();
 		displayName("John");
