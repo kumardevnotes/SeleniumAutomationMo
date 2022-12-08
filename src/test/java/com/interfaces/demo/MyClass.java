@@ -8,6 +8,8 @@ public class MyClass implements MyInterface{
 		obj.displayName();
 		obj.displaySalary();
 		obj.myMethod();
+		
+		
 
 	}
 	
