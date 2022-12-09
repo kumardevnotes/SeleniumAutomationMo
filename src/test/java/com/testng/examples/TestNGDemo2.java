@@ -1,5 +1,6 @@
 package com.testng.examples;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -8,32 +9,44 @@ public class TestNGDemo2 {
 
 	@BeforeTest
 	public void setUp() {
-		
-		//browser launch
-		//launch app
+
+		// browser launch
+		// launch app
 		System.out.println("setup completed");
 	}
-	
-	@Test 
+
+	@Test
 	public void testCase3() {
-		//actual script run
-		//pass
-		//fail
-		System.out.println("Testcase3 passed");
+		int a = 100;
+		int b = 200;
+		if (a == b) {
+     System.out.println("testCase3 passed");
+		}
+		else {
+			Assert.fail("condition is false. So failed the test");
+		}
 	}
-	
-	
-	@Test 
+
+	@Test
 	public void testCase4() {
-		System.out.println("Testcase4 passed");
+		boolean empMarried = false;
+		Assert.assertEquals(empMarried, true, "Emp is not married");
+		
+		
+		Assert.assertEquals(100, 100, "both the integers are not equal");
+		System.out.println("testCase4 passed and no issues");
 	}
-	
+	@Test
+	public void testCase5() {
+		Assert.fail("intentional failing the testcase. condition is false. So failed the test");
+	}
+
+
 	@AfterTest
 	public void tearDown() {
-		//logout
-		//close browser
+		// logout
+		// close browser
 		System.out.println("cleanup completed");
 	}
-	
-	
+
 }
