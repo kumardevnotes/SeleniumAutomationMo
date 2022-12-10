@@ -3,6 +3,7 @@ package com.p;
 public class DataTypesDemo {
 
 	public static void main(String[] args) {
+	
 		System.out.println("Printing employee details:");
 		
 		//Datatypes In java
