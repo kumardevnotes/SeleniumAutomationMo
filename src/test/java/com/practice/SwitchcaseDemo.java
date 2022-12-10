@@ -9,7 +9,7 @@ public class SwitchcaseDemo {
 		switch (day) {
 		case "Monday":
 			System.out.println("Its Monday today");
-			//break;
+			break;
 		case "Friday":
 			System.out.println("Its Firday today");
 			break;
@@ -20,7 +20,7 @@ public class SwitchcaseDemo {
 			System.out.println("You have entered invalid day");
 		}
 
-		System.out.println("I came out of switch block now");
+		//System.out.println("I came out of switch block now");
 	}
 
 }

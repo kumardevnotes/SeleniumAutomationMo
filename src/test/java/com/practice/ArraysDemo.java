@@ -18,7 +18,7 @@ public class ArraysDemo {
 		int empIds[] = {1011, 1122, 3344, 2321, 6565}; //length-1 == 4
 		
 		//empIds[0] = 1011 empIds[1] = 1122 empIds[2] = 3344 empIds[3] = 1011
-//		System.out.println(empIds[0]); //1st value in array
+//	System.out.println(empIds[0]); //1st value in array
 //		System.out.println(empIds[1]);
 //		System.out.println(empIds[2]);
 //		System.out.println(empIds[3]);
