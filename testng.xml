@@ -2,9 +2,15 @@
   
 <suite name="demo suite" verbose="1" >
   <test name="regression test" >
+   <groups>
+    <run>
+      <exclude name="Smoke"  />
+      <include name="Regression"  />
+    </run>
+  </groups>
+
     <classes>
-       <class name="com.testng.examples.TestNGDemo" />
-        <class name="com.testng.examples.TestNGDemo2" />
+       <class name="com.testng.examples.TestNGSeleniumDemo" />
     </classes>
   </test>
  

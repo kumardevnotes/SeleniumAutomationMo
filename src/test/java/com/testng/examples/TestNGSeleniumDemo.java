@@ -12,13 +12,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TestNGSeleniumDemo {
 	ChromeDriver driver;
-	@BeforeTest
+	@BeforeMethod (alwaysRun = true)
 	public void setUp() {
 		String rootFolder = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver", rootFolder + "//src//test//resources//chromedriver.exe");
@@ -33,7 +35,7 @@ public class TestNGSeleniumDemo {
 		
 	}
 	
-	@Test 
+	@Test (enabled  = false)
 	public void verifyHomePage() throws Exception {
 		
 		boolean islogoDisplayed  = driver.findElement(By.id("logo")).isDisplayed();
@@ -59,7 +61,7 @@ public class TestNGSeleniumDemo {
 		}
 	}
 	
-	@Test 
+	@Test (enabled  = false)
 	public void verifyFooterSection() throws Exception {
 		//Scroll to footer
 		Thread.sleep(4000);
@@ -82,17 +84,22 @@ public class TestNGSeleniumDemo {
 		System.out.println("verifyFooterSection passed");
 	}
 	
-	@Test 
+	@Test (enabled  = false) 
 	public void verifyLoginPage() {
-		System.out.println("verifyLoginPage passed");
+	
 	}
 	
-	@Test 
+	@Test (groups = "Smoke")
 	public void verifySignup() {
-		System.out.println("verifySignup passed");
+		System.out.println("Signup success");
 	}
 	
-	@AfterTest
+	@Test (groups = "Regression")
+	public void verifySignup2() {
+		System.out.println("Signup success");
+	}
+	
+	@AfterMethod (alwaysRun = true)
 	public void tearDown() {
 		driver.quit();
 		System.out.println("cleanup completed");

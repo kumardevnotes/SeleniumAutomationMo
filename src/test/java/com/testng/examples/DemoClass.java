@@ -13,11 +13,19 @@ public class DemoClass {
 	//Testcase1
 	private static void verifyFooterPage() {
 		System.out.println("FooterPage verified without issues");
+		//
+		//
+		//
+		//
 	}
 	
 	//Testcase2
 	private static void verifySignUp() {
 		System.out.println("SignupPage verified without issues");
+		//
+		//
+		//
+		//
 	}
 
 	//Testcase3
