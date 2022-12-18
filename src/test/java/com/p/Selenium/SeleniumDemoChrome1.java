@@ -19,11 +19,19 @@ public class SeleniumDemoChrome1 {
 		driver.manage().window().maximize();
 		
 		//Launch application by passing application full url 
-		driver.get("https://speaklanguages.com"); //https://facebook.com
-		
+		driver.get("https://speaklanguages.com"); 
 		//Wait for 2 seconds
 		Thread.sleep(2000); //5000milli seconds == 5seconds
 		
+		driver.get("https://gmail.com"); 
+		Thread.sleep(2000);
+		
+		driver.get("https://google.co.in"); 
+		Thread.sleep(2000);
+		
+		driver.get("https://www.instagram.com"); 
+		Thread.sleep(2000);
+
 		driver.navigate().back();
 		Thread.sleep(2000);
 		
