@@ -1,6 +1,6 @@
 package com.interfaces.demo;
 
-public class MyClass implements MyInterface{
+public class MyClass implements MyInterface{ // 1+ 2
 
 	public static void main(String[] args) {
 		
