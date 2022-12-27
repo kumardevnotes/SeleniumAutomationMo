@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.examples.TestNGSeleniumDemo">
+      <class name="com.c.arrays.collections.demo.SeleniumListCollectionDemo">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="verifyHomePage"/>
+          <include name="verifyImages"/>
         </methods>
-      </class> <!-- com.testng.examples.TestNGSeleniumDemo -->
+      </class> <!-- com.c.arrays.collections.demo.SeleniumListCollectionDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
