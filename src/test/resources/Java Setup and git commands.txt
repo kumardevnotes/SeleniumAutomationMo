@@ -1,0 +1,70 @@
+
+Manual Testing concepts:
+
+Automation Testing - Open-Source & Licensed
+
+Open-source - Selenium- Java/C#/Python/Ruby - Javascript
+Licensed - UFT/TOSCA
+
+----------------------------------------------
+1. Setup java in your machine (JDK -Java development Kit >= 8) 
+    A. Create a profile in Oracle website - Oracle login
+	B. Download JDK (Mac/Windows) - download jdk11
+	C. Install the downloaded file - double click - next -close
+	D. Setup java path 
+	  i. Open environment variables window
+	  ii. goto system variables and add JAVA_HOME variable with value C:\Program Files\Java\jdk-11.0.13
+	F. Open terminol/command prompt and then java -version - it should show up the java version   
+	
+2. IDE - Integrated development environment - Eclipse, Intellij, VSCode
+    eclipse	
+	A.writing java code, compile, build and run your java
+	
+3. GIT - git is a version control software. Used to 
+      push/check-in - into a repository
+	  pull/check-out/download/clone - from repository
+	  
+	  
+    ********* How to clone/Download/pull/check-out latest code into my laptop from repository? **********
+
+1. Open your project in eclipse and then right click - Shown In
+   and then select Terminal
+2. Then execute below command back to back
+
+    git reset --hard
+	git fetch origin
+	git pull
+	
+	
+	
+3. Next goto eclipse and right click and then select Refresh
+4. Next goto eclipse and right click and then select Maven - Update project
+
+
+  ********* How to push or check-in/push the code into repository from my laptop **********
+    
+    - Check your branch and then push
+    
+1. Goto eclipse and right click and then select Refresh
+2. Goto eclipse and right click and then select Maven - Update project
+3. Right click on your project in eclipse and then right click - Shown In
+   and then select Terminal
+4. Then execute below command back to back
+
+      git status --> This will show all modified/added files list
+      git add src/test/MyTestNGClass.java --> This command will add/stage only this given file
+      git add --all --> This will add/stage all files (Modified/Deleted/Added newly)
+      git commit -m "Added TestNG scripts or fixed failed scripts"
+      git push
+      
+      - After git push a new commit id will be generated and you can cross check this in your repository
+      
+      
+ How to create a branch and checkout ?
+ git branch NewBranchName
+ git checkout NewBranchName
+ git branch --> LIst out all the branches and the current branch is shown in green
+ git branch NewBranchName -- creates a new branch
+ git checkout NewBranchName --> switch control to the given branch name
+  
+	
