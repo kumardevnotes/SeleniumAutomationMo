@@ -48,6 +48,15 @@ public class SpeakLangLoginTest {
 		Thread.sleep(2000);
 
 		driver.quit();
+		
+		/*
+		 * boolean isButtonEnabled = driver.findElement(By.linkText("button")).isEnabled(); //returns true if button is clickable
+		boolean isCheckboxSelected = driver.findElement(By.linkText("checkbox")).isSelected(); //true false
+		boolean isRadiouBUttonSelected = driver.findElement(By.linkText("radiobuttonMale")).isSelected(); //true false
+		boolean isTextFZieldDisplayed = driver.findElement(By.id("text field")).isDisplayed(); //true false
+		*/
+		
+		
 	}
 
 }

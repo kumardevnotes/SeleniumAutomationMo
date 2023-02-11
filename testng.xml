@@ -4,7 +4,8 @@
 <parameter name="browser"  value="Chrome"/>
   <test name="regression test" >
     <classes>
-       <class name="com.c.testng.demos.CrossBrowserTestingDemo" />
+       <class name="com.testng.examples.AllAnnotationsDemo" />
+        <class name="com.testng.examples.AllAnnotationsDemo2" />
     </classes>
   </test>
  

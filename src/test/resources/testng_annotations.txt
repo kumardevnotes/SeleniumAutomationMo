@@ -1,0 +1,14 @@
+
+
+I am from beforeSuite - Only 1 time before it runs 1st test in the suite
+I am from beforeTest - Only 1 time before first test runs in a particular class
+I am from beforeClass - only 1 time beofre it runs tests in particular class
+I am from beforeMethod - This runs before each Test
+I am from samplTestCase1 - Actual Testcase1
+I am from afterMethod-  This runs after each Test
+I am from beforeMethod  - This runs before each Test
+I am from samplTestCase2 - Actual Testcase2
+I am from afterMethod - This runs after each Test
+I am from afterClass - This runs only once 
+I am from afterTest -This runs only once
+I am from afterSuite - This runs only once
